@@ -3,7 +3,7 @@ Code-Examples
 
 Code Examples from Jordan Rynard
 
-PHP Application: Automatic TV/Movies Downloader and Media Manager.  
+**PHP Application: Automatic TV/Movies Downloader and Media Manager.**  
 (Main code example, contains many different types:)
   * PHP (Most files, particularly in '/classes/')
   * HTML (in '/view/')
@@ -12,8 +12,8 @@ PHP Application: Automatic TV/Movies Downloader and Media Manager.
   * MySQL Queries (in '/classes/Data.class.php')
   * Regex (in '/classes/TorrentsEpisode.class.php' :237)
 
-Wordpress Plugin: Live Refresh
+**Wordpress Plugin: Live Refresh**
 
-Wordpress Plugin: Twitter Feed
+**Wordpress Plugin: Twitter Feed**
 
-Wordpress Theme: Blank Canvas
+**Wordpress Theme: Blank Canvas**

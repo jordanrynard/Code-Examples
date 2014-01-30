@@ -18,4 +18,4 @@ Code-Examples
 
 **Wordpress Theme: Muskoka Beer Festival**  
   * Requires a few dependencies, so will break if try to use on own
-  * Has a Survey system, and a Ticket Purchase display system in the functions.php 
+  * Has a simple Survey system, and a simple Ticket Purchase display system in the functions.php 

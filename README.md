@@ -7,7 +7,7 @@ Code-Examples
   * HTML (in '/view/')
   * Javascript & jQuery (in '/view/')
   * CSS ( in '/view/')
-  * MySQL Queries (in '/classes/Data.class.php')
+  * MySQL (in '/classes/Data.class.php')
   * Regex (in '/classes/TorrentsEpisode.class.php' :223)
 
 **Wordpress Plugin: Live Refresh**

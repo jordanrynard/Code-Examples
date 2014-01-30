@@ -1,0 +1,22 @@
+
+/*=======================================================================*/
+.plugin-update-tr .update-message {
+	background-color:rgba(255,0,0,.5)!important;
+}
+
+
+/*======================= Hide Filters ==============================*/
+.tablenav.top .alignleft.actions select[name=m],
+.tablenav.top .alignleft.actions select[name=seo_filter],
+.tablenav.top .alignleft.actions input[type=submit] {
+	display:none;
+}
+
+/* Hide preview */
+#view-post-btn {
+	display:none;
+}
+
+#wp-content-media-buttons a[title='Crop Thumbnails']{
+	display:none;
+}

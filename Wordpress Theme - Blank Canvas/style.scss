@@ -1,0 +1,38 @@
+/*!
+Theme Name: Blank Canvas
+Author: Jordan Rynard
+Author URI: http://jordanrynard.com/
+Description: A semantic, HTML5, canvas for development of sites built and maintained by Jordan Rynard. Outfitted for SASS.
+Version: 2.0
+*/
+
+/*!
+Fonts: 
+
+
+*/
+@import "partials/_vars";
+@import "partials/_mixins";
+
+@import "partials/_normalize";
+@import "partials/_base";
+@import "partials/1_global";
+@import "partials/2_header";
+@import "partials/3_nav";
+
+
+//****************************************************************
+//      Footer
+//****************************************************************
+@import "partials/4_pagination";
+@import "partials/5_footer";
+
+//****************************************************************
+//      Media Queries
+//****************************************************************
+@import "partials/6_media";
+
+//****************************************************************
+//      Pages
+//****************************************************************
+@import "partials/_pages";

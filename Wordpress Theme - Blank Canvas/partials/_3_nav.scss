@@ -1,0 +1,66 @@
+nav#access {
+	/* first level */
+	>ul.menu {
+		>li {
+			position:relative;
+			display:inline-block;
+			>a {
+				text-decoration:none;
+			}
+			&.current-menu-item, &.current_page_item, &:hover {
+				> a {
+				}
+			}
+			&:first-child {
+			}
+			/* second level (submenu) */
+			>ul {
+				position:absolute;
+				display:none;
+				left:0px;
+				bottom:0px;
+
+				>li {
+					position:relative;
+					>a {
+						text-decoration:none;
+					}
+					&.current-menu-item, &.current_page_item, &:hover {
+						> a {
+						}
+					}					
+					/* third level (subsubmenu) */
+					>ul {
+						position:absolute;
+						display:none;
+						top:0px;
+						left:100%;
+						>li {
+							position:relative;
+							>a {
+								text-decoration:none;
+							}
+							&.current-menu-item, &.current_page_item, &:hover {
+								> a {
+								}
+							}					
+						}
+					} 
+					/* END third level */					
+					&:hover {
+						>ul {
+							display:block;
+						}
+					}
+				}
+			}
+			/* END second level */
+			&:hover {
+				>ul {
+					display:block;
+				}
+			}
+		}
+	}
+	/* END first level */
+}

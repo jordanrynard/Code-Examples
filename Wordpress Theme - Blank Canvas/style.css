@@ -1,0 +1,648 @@
+/*
+ * !
+ * Theme Name: Blank Canvas
+ * Author: Jordan Rynard
+ * Author URI: http://jordanrynard.com/
+ * Description: A semantic, HTML5, canvas for development of sites built and maintained by Jordan Rynard. Outfitted for SASS. Contains many helper functions.
+ * Version: 2.0
+ */
+/*
+ * !
+ * Fonts:
+ */
+/*
+ * =================================================== MEYER RESET =============================================
+ */
+/* line 2 C:\www\session.dev\wp-content\themes\cws\partials\__normalize.scss */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 3 C:\www\session.dev\wp-content\themes\cws\partials\__normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+/* line 4 C:\www\session.dev\wp-content\themes\cws\partials\__normalize.scss */
+body {
+  line-height: normal; }
+
+/* line 5 C:\www\session.dev\wp-content\themes\cws\partials\__normalize.scss */
+ol,
+ul {
+  list-style: none; }
+
+/* line 6 C:\www\session.dev\wp-content\themes\cws\partials\__normalize.scss */
+blockquote,
+q {
+  quotes: none; }
+
+/* line 7 C:\www\session.dev\wp-content\themes\cws\partials\__normalize.scss */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none; }
+
+/* line 8 C:\www\session.dev\wp-content\themes\cws\partials\__normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 9 C:\www\session.dev\wp-content\themes\cws\partials\__normalize.scss */
+b,
+strong {
+  font-weight: bold; }
+
+/* line 10 C:\www\session.dev\wp-content\themes\cws\partials\__normalize.scss */
+em,
+i {
+  font-style: italic; }
+
+/* line 11 C:\www\session.dev\wp-content\themes\cws\partials\__normalize.scss */
+input,
+textarea {
+  padding: 0px;
+  border: none;
+  outline: none;
+  resize: none;
+  overflow: hidden;
+  resize: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*
+ * ===================== WORDPRESS NORMALIZE / BASE =======================
+ */
+/*
+ * Text meant only for screen readers
+ */
+/* line 5 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+.screen-reader-text,
+.assistive-text {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+    /*
+   * IE6, IE7
+   */
+  clip: rect(1px, 1px, 1px, 1px); }
+
+/*
+ * Alignment
+ */
+/* line 12 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+.alignleft {
+  display: inline;
+  float: left; }
+
+/* line 16 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+.alignright {
+  display: inline;
+  float: right; }
+
+/* line 20 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/*
+ * content navigation
+ */
+/* line 28 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+#content nav {
+  display: block;
+  overflow: hidden; }
+
+/* line 32 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+#content nav .nav-previous {
+  float: left;
+  width: 50%; }
+
+/* line 36 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+#content nav .nav-next {
+  float: right;
+  text-align: right;
+  width: 50%; }
+
+/*
+ * 404 page
+ */
+/* line 43 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+.error404 .widget {
+  float: left;
+  width: 33%; }
+
+/* line 48 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+.error404 .widget .widgettitle,
+.error404 .widget ul {
+  margin-right: 1em; }
+
+/* line 51 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+.error404 .widget_tag_cloud {
+  clear: both;
+  float: none;
+  width: 100%; }
+
+/*
+ * Notices
+ */
+/* line 59 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+.post .notice,
+.error404 #searchform {
+  background: #eeeeee;
+  display: block;
+  padding: 1em; }
+
+/*
+ * Image Attachments
+ */
+/* line 66 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+.image-attachment div.entry-meta {
+  float: left; }
+
+/* line 69 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+.image-attachment nav {
+  float: right;
+  margin: 0 0 1em 0; }
+
+/* line 73 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+.image-attachment .entry-content {
+  clear: both; }
+
+/* line 76 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+.image-attachment .entry-content .entry-attachment {
+  background: #eeeeee;
+  margin: 0 0 1em;
+  padding: 1em;
+  text-align: center; }
+
+/* line 82 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+.image-attachment .entry-content .attachment {
+  display: block;
+  margin: 0 auto;
+  text-align: center; }
+
+/*
+ * Aside Posts
+ */
+/* line 89 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+.format-aside .entry-header {
+  display: none; }
+
+/* line 92 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+.single .format-aside .entry-header {
+  display: block; }
+
+/* line 96 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+.format-aside .entry-content,
+.format-aside .entry-summary {
+  padding-top: 1em; }
+
+/* line 100 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+.single .format-aside .entry-content,
+.single .format-aside .entry-summary {
+  padding-top: 0; }
+
+/*
+ * Gallery Posts
+ */
+/* line 105 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+.format-gallery .gallery-thumb {
+  float: left;
+  margin: 0 1em 0 0; }
+
+/*
+ * Image Posts
+ */
+/* line 111 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+.format-image .entry-header {
+  display: none; }
+
+/* line 114 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+.single .format-image .entry-header {
+  display: block; }
+
+/* line 118 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+.format-image .entry-content,
+.format-image .entry-summary {
+  padding-top: 1em; }
+
+/* line 122 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+.single .format-image .entry-content,
+.single .format-image .entry-summary {
+  padding-top: 0; }
+
+/*
+ * =Images
+ * --------------------------------------------------------------
+ */
+/* line 129 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+a img {
+  border: none; }
+
+/* line 132 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+p img {
+  margin-bottom: 0.5em;
+    /*
+   * a small bottom margin prevents content floating under images
+   */ }
+
+/*
+ * 
+ * Resize images to fit the main content area.
+ * - Applies only to images uploaded via WordPress by targeting size-* classes.
+ * - Other images will be left alone. Use "size-auto" class to apply to other images.
+ */
+/* line 146 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+img.size-auto,
+img.size-full,
+img.size-large,
+img.size-medium,
+.attachment img,
+.widget-area img,
+.wp-caption {
+  max-width: 100%;
+    /*
+   * When images are too wide for containing element, force them to fit.
+   */
+  height: auto;
+    /*
+   * Override height to match resized width for correct aspect ratio.
+   */ }
+
+/* line 150 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+img.alignleft {
+  margin-right: 1em; }
+
+/* line 153 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+img.alignright {
+  margin-left: 1em; }
+
+/* line 156 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+.wp-caption {
+  padding: 0.5em;
+  text-align: center; }
+
+/* line 160 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+.wp-caption img {
+  margin: 0.25em; }
+
+/* line 163 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+.wp-caption .wp-caption-text {
+  margin: 0.5em; }
+
+/* line 166 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+
+/* line 168 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+.wp-smiley {
+  margin: 0; }
+
+/*
+ * =Forms
+ * --------------------------------------------------------------
+ */
+/* line 175 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+#searchform label {
+  display: none; }
+
+/* line 178 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+#searchform input#s {
+  width: 60%; }
+
+/* line 182 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+input[type=text],
+input#s {
+  margin: 0 1em 0 0;
+  width: 60%; }
+
+/* line 186 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+textarea {
+  width: 80%; }
+
+/*
+ * Class for labelling required form items
+ */
+/* line 191 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+.required {
+  color: #cc0033; }
+
+/*
+ * =Comments
+ * --------------------------------------------------------------
+ */
+/* line 198 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+article.comment {
+  display: block; }
+
+/* line 201 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+#respond input[type=text] {
+  display: block;
+  width: 60%; }
+
+/* line 205 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+#respond textarea {
+  display: block;
+  margin: 0 0 1em;
+  width: 80%; }
+
+/* line 210 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+#respond .form-allowed-tags {
+  clear: both;
+  width: 80%; }
+
+/* line 214 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+#respond .form-allowed-tags code {
+  display: block; }
+
+/*
+ * =Widgets
+ * --------------------------------------------------------------
+ */
+/* line 221 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+.widget {
+  display: block; }
+
+/* line 224 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+.widget-area .widget_search {
+  overflow: hidden; }
+
+/* line 227 C:\www\session.dev\wp-content\themes\cws\partials\__base.scss */
+.widget-area .widget_search input {
+  float: left; }
+
+/* line 2 C:\www\session.dev\wp-content\themes\cws\partials\_1_global.scss */
+body {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  font-size: 1em; }
+
+/* line 10 C:\www\session.dev\wp-content\themes\cws\partials\_1_global.scss */
+
+/* line 12 C:\www\session.dev\wp-content\themes\cws\partials\_1_global.scss */
+
+/* line 16 C:\www\session.dev\wp-content\themes\cws\partials\_1_global.scss */
+  /* line 17 C:\www\session.dev\wp-content\themes\cws\partials\_1_global.scss */
+  h1 a {
+    text-decoration: none; }
+
+/* line 21 C:\www\session.dev\wp-content\themes\cws\partials\_1_global.scss */
+  /* line 22 C:\www\session.dev\wp-content\themes\cws\partials\_1_global.scss */
+  h2 a {
+    text-decoration: none; }
+
+/* line 26 C:\www\session.dev\wp-content\themes\cws\partials\_1_global.scss */
+  /* line 27 C:\www\session.dev\wp-content\themes\cws\partials\_1_global.scss */
+  h3 a {
+    text-decoration: none; }
+
+/* line 31 C:\www\session.dev\wp-content\themes\cws\partials\_1_global.scss */
+  /* line 32 C:\www\session.dev\wp-content\themes\cws\partials\_1_global.scss */
+  h4 a {
+    text-decoration: none; }
+
+/* line 36 C:\www\session.dev\wp-content\themes\cws\partials\_1_global.scss */
+  /* line 37 C:\www\session.dev\wp-content\themes\cws\partials\_1_global.scss */
+  h5 a {
+    text-decoration: none; }
+
+/* line 43 C:\www\session.dev\wp-content\themes\cws\partials\_1_global.scss */
+#page {
+  position: relative;
+  margin: 0 auto; }
+
+/* line 49 C:\www\session.dev\wp-content\themes\cws\partials\_1_global.scss */
+#main {
+  z-index: 25;
+  clear: both; }
+  /* line 52 C:\www\session.dev\wp-content\themes\cws\partials\_1_global.scss */
+    /* line 53 C:\www\session.dev\wp-content\themes\cws\partials\_1_global.scss */
+  /* line 56 C:\www\session.dev\wp-content\themes\cws\partials\_1_global.scss */
+
+/* line 1 C:\www\session.dev\wp-content\themes\cws\partials\_2_header.scss */
+header#branding {
+  position: relative;
+  z-index: 50;
+    /*
+   * logo
+   */ }
+  /* line 6 C:\www\session.dev\wp-content\themes\cws\partials\_2_header.scss */
+    /* line 8 C:\www\session.dev\wp-content\themes\cws\partials\_2_header.scss */
+
+/* line 1 C:\www\session.dev\wp-content\themes\cws\partials\_3_nav.scss */
+nav#access {
+    /*
+   * first level
+   */ }
+  /* line 3 C:\www\session.dev\wp-content\themes\cws\partials\_3_nav.scss */
+  nav#access >ul.menu {
+        /*
+     * END first level
+     */ }
+    /* line 4 C:\www\session.dev\wp-content\themes\cws\partials\_3_nav.scss */
+    nav#access >ul.menu >li {
+      position: relative;
+      display: inline-block; }
+      /* line 7 C:\www\session.dev\wp-content\themes\cws\partials\_3_nav.scss */
+      nav#access >ul.menu >li >a {
+        text-decoration: none; }
+      /* line 10 C:\www\session.dev\wp-content\themes\cws\partials\_3_nav.scss */
+      nav#access >ul.menu >li.current-menu-item,
+      nav#access >ul.menu >li.current_page_item,
+      nav#access >ul.menu >li:hover {
+                /*
+         * second level (submenu)
+         */
+                /*
+         * END second level
+         */ }
+        /* line 11 C:\www\session.dev\wp-content\themes\cws\partials\_3_nav.scss */
+        /* line 13 C:\www\session.dev\wp-content\themes\cws\partials\_3_nav.scss */
+        /* line 16 C:\www\session.dev\wp-content\themes\cws\partials\_3_nav.scss */
+        nav#access >ul.menu >li.current-menu-item >ul,
+        nav#access >ul.menu >li.current_page_item >ul,
+        nav#access >ul.menu >li:hover >ul {
+          position: absolute;
+          display: none;
+          left: 0px;
+          bottom: 0px; }
+          /* line 22 C:\www\session.dev\wp-content\themes\cws\partials\_3_nav.scss */
+          nav#access >ul.menu >li.current-menu-item >ul >li,
+          nav#access >ul.menu >li.current_page_item >ul >li,
+          nav#access >ul.menu >li:hover >ul >li {
+            position: relative;
+                        /*
+             * third level (subsubmenu)
+             */
+                        /*
+             * END third level
+             */ }
+            /* line 24 C:\www\session.dev\wp-content\themes\cws\partials\_3_nav.scss */
+            nav#access >ul.menu >li.current-menu-item >ul >li >a,
+            nav#access >ul.menu >li.current_page_item >ul >li >a,
+            nav#access >ul.menu >li:hover >ul >li >a {
+              text-decoration: none; }
+            /* line 27 C:\www\session.dev\wp-content\themes\cws\partials\_3_nav.scss */
+              /* line 28 C:\www\session.dev\wp-content\themes\cws\partials\_3_nav.scss */
+            /* line 32 C:\www\session.dev\wp-content\themes\cws\partials\_3_nav.scss */
+            nav#access >ul.menu >li.current-menu-item >ul >li >ul,
+            nav#access >ul.menu >li.current_page_item >ul >li >ul,
+            nav#access >ul.menu >li:hover >ul >li >ul {
+              position: absolute;
+              display: none;
+              top: 0px;
+              left: 100%; }
+              /* line 37 C:\www\session.dev\wp-content\themes\cws\partials\_3_nav.scss */
+              nav#access >ul.menu >li.current-menu-item >ul >li >ul >li,
+              nav#access >ul.menu >li.current_page_item >ul >li >ul >li,
+              nav#access >ul.menu >li:hover >ul >li >ul >li {
+                position: relative; }
+                /* line 39 C:\www\session.dev\wp-content\themes\cws\partials\_3_nav.scss */
+                nav#access >ul.menu >li.current-menu-item >ul >li >ul >li >a,
+                nav#access >ul.menu >li.current_page_item >ul >li >ul >li >a,
+                nav#access >ul.menu >li:hover >ul >li >ul >li >a {
+                  text-decoration: none; }
+                /* line 42 C:\www\session.dev\wp-content\themes\cws\partials\_3_nav.scss */
+                  /* line 43 C:\www\session.dev\wp-content\themes\cws\partials\_3_nav.scss */
+            /* line 49 C:\www\session.dev\wp-content\themes\cws\partials\_3_nav.scss */
+              /* line 50 C:\www\session.dev\wp-content\themes\cws\partials\_3_nav.scss */
+              nav#access >ul.menu >li.current-menu-item >ul >li:hover >ul,
+              nav#access >ul.menu >li.current_page_item >ul >li:hover >ul,
+              nav#access >ul.menu >li:hover >ul >li:hover >ul {
+                display: block; }
+        /* line 57 C:\www\session.dev\wp-content\themes\cws\partials\_3_nav.scss */
+          /* line 58 C:\www\session.dev\wp-content\themes\cws\partials\_3_nav.scss */
+          nav#access >ul.menu >li.current-menu-item:hover >ul,
+          nav#access >ul.menu >li.current_page_item:hover >ul,
+          nav#access >ul.menu >li:hover:hover >ul {
+            display: block; }
+
+/* line 1 C:\www\session.dev\wp-content\themes\cws\partials\_4_pagination.scss */
+.pagination {
+  clear: both; }
+  /* line 4 C:\www\session.dev\wp-content\themes\cws\partials\_4_pagination.scss */
+  /* line 6 C:\www\session.dev\wp-content\themes\cws\partials\_4_pagination.scss */
+  /* line 8 C:\www\session.dev\wp-content\themes\cws\partials\_4_pagination.scss */
+  /* line 10 C:\www\session.dev\wp-content\themes\cws\partials\_4_pagination.scss */
+
+/* line 1 C:\www\session.dev\wp-content\themes\cws\partials\_5_footer.scss */
+footer#colophon {
+  clear: both; }
+
+/* line 4 C:\www\session.dev\wp-content\themes\cws\partials\_6_media.scss */
+@media screen and (max-device-width: 480px) {
+   }
+
+/* line 8 C:\www\session.dev\wp-content\themes\cws\partials\_6_media.scss */
+@media all and (orientation: portrait) {
+   }
+
+/* line 12 C:\www\session.dev\wp-content\themes\cws\partials\_6_media.scss */
+@media all and (orientation: landscape) {
+   }
+
+/*
+ * ======================================================PAGE: Home =================================================
+ */
+/* line 2 C:\www\session.dev\wp-content\themes\cws\partials\_pages.scss */
+

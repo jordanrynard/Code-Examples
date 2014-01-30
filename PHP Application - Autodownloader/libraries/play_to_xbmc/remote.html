@@ -1,0 +1,73 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui-1.8.15.custom.css"/>
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <style>
+        .ui-slider .ui-slider-handle {
+            top:-.8em !important;
+            width:2.2em !important;
+            height:2.2em !important;
+        }
+        #remoteRow {
+            margin:5px 0px 0px 0px;
+        }
+        #remoteRow button {
+            padding:10px;
+            width:auto;
+        }
+            #remoteRow button img {
+                height:35px;
+                width:auto;
+                max-width:none;
+            }
+        #volumeRow {
+            width:285px;
+            margin-top:10px;
+        }
+        #nowPlayingRow {
+            text-align:center;
+            margin-top:-5px;
+        }
+        button.selected {
+            outline:2px solid #000!important;
+        }
+    </style>    
+    <script>
+            /* This doesn't work in Mobile Safari for some reason */
+            localStorage.setItem("url", 'triangle-pi.local/dependencies/xbmc_proxy.php?garbage=');
+            localStorage.setItem("port", '');
+            localStorage.setItem("username", '');
+            localStorage.setItem("password", ''); 
+    </script>
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
+    <script src="../jquery.ui.touch-punch.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/shared.js"></script>
+    <script type="text/javascript" src="js/remote.js"></script>
+    <script type="text/javascript" src="js/xbmc-helper.js"></script>
+    <script type="text/javascript" src="js/init.js"></script>
+</head>
+
+<body style="width:480px;">
+
+<div id="remoteRow" class="row">
+    <button id="previousBtn"><img src="images/prev.png" alt="Previous"></button>
+    <button id="rewindBtn"><img src="images/rw.jpg" alt="Step Back"/></button>
+        <button id="stopBtn"><img src="images/stop.jpg" alt="Stop"/></button>
+        <button id="playBtn"><img src="images/playpause.gif" alt="PlayPause"/></button>
+    <button id="fastForwardBtn"><img src="images/ff.jpg" alt="Step Forward"/></button>
+    <button id="nextBtn"><img src="images/skip.png" alt="Skip"/></button>
+</div>
+
+<div id="volumeRow" class="row">
+    <div id="volume_control" style="width:285px; margin: 5px 0px 5px 0px;"></div>
+</div>
+
+<div id="nowPlayingRow" class="row">
+</div>
+
+
+</body>
+</html>

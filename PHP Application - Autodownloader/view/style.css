@@ -1,0 +1,395 @@
+/*========================================================== Global ==================================================================*/
+html, body {
+	margin:0px;
+	padding:0px;
+	font-family:arial, helvetica, sans-serif;
+	-webkit-text-size-adjust: none;
+}
+body {
+	position:relative;
+	background:rgba(0,0,0,.7);
+}
+.wrapper {
+	position:relative;
+	margin:0 auto;
+	padding:70px 0px 70px 0px;
+	padding:150px 0px 70px 0px; /* After Remote Control */
+	padding:177px 0px 70px 0px; /* After Remote Control and Volume */
+	padding:197px 0px 70px 0px; /* After Remote Control and Volume and Now Playing*/
+	box-shadow:0px 0px 50px rgba(0,0,0,.7);
+	width:480px;
+	background:#fff;
+}
+
+/*========================================================== NAV ==================================================================*/
+#top-bar {
+	z-index:99999;
+	position:fixed;
+	top:0px;
+	left:0px;
+	text-align:justify;
+	background:#000;
+	color:#fff;
+	font-size:10px;
+	width:480px;
+	left:50%;
+	margin-left:-240px;
+}
+#bottom-bar {
+	z-index:99999;
+	position:fixed;
+	bottom:0px;
+	left:0px;
+	font-size:10px;
+	background:#000;
+	color:#fff;
+	width:480px;
+	left:50%;
+	margin-left:-240px;
+}
+	#top-bar a, 
+	#bottom-bar a {
+		color:#fff;
+		text-decoration:none;
+		font-family:arial,helvetica,sans-serif;
+		font-size:22px;
+		width:480px;
+		height:70px;
+		line-height:70px;
+		text-transform:uppercase;
+		letter-spacing:-1px;
+		font-weight:bold;
+		display:inline-block;
+		width:160px;
+		text-align:center;
+		float:left;
+	}
+	#top-bar a.selected, 
+	#bottom-bar a.selected {
+		background:url('images/spotlight-120.png') no-repeat center center;
+		background-size:95% 100%; /* desktop */
+		background-size:100% 120%;
+	}
+
+#remote-control {
+	z-index:99999;
+	position:fixed;
+	width:480px;
+	height:85px;
+	height:107px; /* After Volume */
+	height:127px; /* After Now Playing */
+	top:70px;
+	left:50%;
+	margin-left:-240px;
+	background:#fff;
+	/* border-bottom:1px dotted rgba(0,0,0,.5) */
+	box-shadow:0px 0px 13px rgba( 0,0,0,.5);
+}
+
+/*============================================================== ALL ====================================================================*/
+ul.main-list {
+	width:480px;
+	min-height:100%;
+}
+	ul.main-list > li {
+		position:relative;
+		overflow:hidden;
+		height:203px;
+		font-size:16px;
+		padding:5px 5px 5px 5px;
+		border-bottom:1px dotted rgba(0,0,0,.5);
+	}
+		ul.main-list > li > * {
+			position:relative;
+			z-index:5;
+		}
+		ul.main-list > li .image {
+			z-index:9999;
+			position:relative;
+			float:left;
+			margin-right:15px;
+			box-shadow:0px 0px 7px rgba(0,0,0,.3);
+			height:203px;
+			width:138px;
+		}
+			ul.main-list > li .image .banner_watched {
+				z-index:9999;
+				position:absolute; 
+				top:15px;
+				left:-10px;
+			}
+			ul.sublist > li .image .banner_watched {
+				top:5px!important;
+			}
+
+		ul.main-list > li .title {
+			font-size:22px;
+			font-weight:bold;
+			height:36px;
+			line-height:31px;
+			white-space:nowrap;
+
+			position:relative;
+			overflow:hidden;
+		}
+			ul.main-list > li .title span {
+				position:absolute;
+				/*right:0px;*/
+				padding-right:70px;
+			}
+
+		ul.main-list > li .date {
+			z-index:100;
+			position:relative;
+			height:29px;
+			line-height:25px;
+		}
+		ul.main-list > li .download {
+			z-index:115;
+			position:relative;
+			height:100px;
+			overflow:hidden;
+		}
+			ul.main-list > li .download a.button {
+				z-index:5;
+				position:relative;
+				display:inline-block;
+				height:95px;
+				width:140px;
+				text-align:center;
+				color:#000;
+				float:left;
+				margin-right:25px;
+				margin-right:20px;
+				font-size: 20px;
+				text-decoration: none;
+				text-transform: uppercase;
+				line-height: 30px;
+				display: table;
+				background:rgba(0,0,0,.1);
+			}
+			ul.main-list > li .download a.button:last-child {
+				margin-right:0px;
+			}
+			ul.main-list > li .download .button.download[data-status=download] {
+			}
+			ul.main-list > li .download .button.download[data-status=selected] {
+				background:rgba(0,255,0,.5);
+			}
+			ul.main-list > li .download .button.download[data-status=finding],
+			ul.main-list > li .download .button.download[data-status=queued],
+			ul.main-list > li .download .button.download[data-status=downloading] {
+				background:rgba(255,255,0,.5);
+				cursor:default;
+			}
+			ul.main-list > li .download .button.download[data-status=downloaded] {
+				background:rgba(0,255,0,.5);
+				cursor:default;
+				cursor:pointer;
+			}
+			ul.main-list > li .download .button.download[data-status=mobile_conversion_complete] {
+				background:rgba(0,0,255,.5);
+			}
+			ul.main-list > li .download .button.download[data-status=not_found],
+			ul.main-list > li .download .button.download[data-status=not_found_gave_up] {
+				background:rgba(255,0,0,.5);
+				cursor:default;
+			}
+				ul.main-list > li .download a.button span {
+					height:91px;
+					display:table-cell;
+					vertical-align: middle;
+				}
+			.view-trailer {
+				position:relative;
+				overflow:hidden;
+			}
+			.player {
+				z-index:999999;
+				position:absolute!important;
+			}
+			ul.main-list > li .rt_critics-score {
+				z-index:90;
+				position:absolute;
+				top:0px;
+				right:0px;
+				right:5px;
+				font-size:20px;
+				font-weight:bold;
+				font-style:normal;
+				height:36px;
+				line-height:31px;
+				background:#fff;
+				display:block;
+				padding:6px 6px 6px 12px;
+				color:rgba(0,0,0,1);
+			}
+
+/*============================================================ MOVIES =======================================================*/
+.movies ul.main-list > li .details {
+	font-size:14px;
+	line-height:17px;
+	height:43px;
+	height:50px;
+	overflow:hidden;
+	margin:0px 7px 17px 0px;
+}
+.movies ul.main-list > li .download {
+	height:75px;
+	margin-top:-2px;
+}
+	.movies ul.main-list > li .download a.button {
+		height:75px;
+		height:68px;
+		font-size:18px;
+		width:145px;
+	}
+		.movies ul.main-list > li .download a.button span {
+			height:75px;
+			height:68px;
+		}
+/*============================================================ TV =======================================================*/
+.tv ul.main-list > li {
+	cursor:pointer;
+	height:auto;
+}
+			ul.main-list > li .download .button.download.all[data-setting=all], 
+			ul.main-list > li .download .button.download.new[data-setting=new] {
+				background:rgba(0,255,0,.5);
+			}
+
+		.tv ul.main-list > li ul.sublist {
+			clear:both;
+			padding:5px 0px 0px 0px;
+		}
+			.tv ul.main-list > li ul.sublist {
+				font-size:14px;
+				display:none;
+			}
+				.tv ul.main-list > li ul.sublist > li.season {
+				}
+					.tv ul.main-list > li ul.sublist > li.season a.season_title {
+						font-weight: bold;
+						font-size: 22px;
+						color: #fff;
+						background: rgba(0,0,0,.5);
+						text-transform: uppercase;
+						padding: 20px 5px;
+						display: block;
+						text-decoration: none;
+						border-bottom: 1px solid #fff;
+					}
+					.tv ul.main-list > li ul.sublist > li.season ul {
+						margin-top:-1px;
+						display:none;
+						line-height:normal;
+					}
+						.tv ul.main-list > li ul.sublist > li.season ul > li.episode {
+							height: 100px;
+							overflow: hidden;
+							position: relative;
+							padding: 5px 5px 5px 5px;
+							border-bottom: 1px dotted rgba(0,0,0,.5);
+						}
+							.tv ul.main-list > li ul.sublist > li.season ul > li.episode .image {
+								z-index:9999;
+								position: relative;
+								float: left;
+								margin-right: 5px;
+								width: 138px;
+								height: 100px;
+								overflow: hidden;
+								vertical-align: bottom;
+							}
+							.tv ul.main-list > li ul.sublist > li.season ul > li.episode .download {
+								float: right;
+								width: 115px;
+								height: 100px;
+								margin: 0px 0px 0px 5px;
+								position: relative;
+							}
+								.tv ul.main-list > li ul.sublist > li.season ul > li.episode .download a.download {
+									position: absolute;
+									bottom: 0px;
+									left: 0px;
+									width: 100%;
+									height: 48%;
+									letter-spacing: -1px;
+									font-size: 17px;
+									display: table;		
+									margin:0px;							
+								}
+									.tv ul.main-list > li ul.sublist > li.season ul > li.episode .download a.download span {
+										height:auto;
+									}
+							.tv ul.main-list > li ul.sublist > li.season ul > li.episode .episode {
+								font-weight: bold;
+								font-size: 16px;
+								margin-top:-1px;
+							}
+							.tv ul.main-list > li ul.sublist > li.season ul > li.episode .title {
+								font-weight: bold;
+								font-size: 14px;
+							}
+							.tv ul.main-list > li ul.sublist > li.season ul > li.episode .date {
+								white-space: nowrap;
+							}
+
+/*============================================================ SEARCH =======================================================*/
+.search_form {
+	position:relative;
+	width:480px;
+}
+	.search_form input[type=text] {
+		width:460px;
+		height:100px;
+		padding:10px;
+		margin:25px 10px;
+		border:2px solid rgba(0,0,0,.5);
+		font-size:36px;
+		text-align:center;
+	}
+	.search_form h1 {
+		font-size:24px;
+		text-align:center;
+	}
+	.search_form .heading {
+		margin-top:-6px;
+		margin-bottom:8px;
+		padding:0px 0px 0px 5px;
+		font-size:20px;
+	}
+	.search_form .please-wait {
+		text-align:center;
+		display:none;
+		padding:0px 0px 40px 0px;
+	}
+		.search_form .please-wait h1 {
+			padding:25px 0px 25px 0px;
+		}
+
+/*===================================================== VIDEO PLAYER ===============================================================*/
+.overlay {
+	z-index:999999;
+	position:fixed;
+	top:0px;
+	left:0px;
+	bottom:0px;
+	right:0px;
+	background:rgba(0,0,0,.95);
+}
+	.overlay .loading {
+		z-index:9999999;
+		position:fixed;
+		top:175px!important;
+		left:50%;
+		margin-left:-50px;
+
+	}
+	.overlay .video-player {
+		z-index:999999;
+		position:fixed;
+		top:150px!important;
+		/*box-shadow:0px 0px 450px #000;*/
+		left:50%;
+	}

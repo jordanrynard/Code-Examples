@@ -1,0 +1,62 @@
+//****************************************************************
+//      Structure Defaults
+//****************************************************************
+body {
+	position:relative;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:100%;
+	font-size:1em;
+}
+
+
+a { 
+} 
+a:hover { 
+}
+
+
+h1 { 
+	a { 
+		text-decoration:none;
+	}
+}
+h2 { 
+	a { 
+		text-decoration:none; 
+	}
+} 
+h3 { 
+	a { 
+		text-decoration:none; 
+	}	
+} 
+h4 { 
+	a { 
+		text-decoration:none;
+	}
+} 
+h5 { 
+	a { 
+		text-decoration:none;
+	}
+} 
+
+
+#page {
+	position:relative;
+	margin:0 auto;
+}
+
+
+#main {
+	z-index:25;
+	clear:both;
+	#primary {
+		#content {
+		}
+	}
+	#secondary {
+		
+	}
+}
+

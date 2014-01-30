@@ -76,7 +76,7 @@ class jrTwitterFeed {
 	        'oauth_version' => '1.0'
 	    );
 
-		$base_info = buildBaseString($url, 'GET', $oauth);
+		$base_info = $this->buildBaseString($url, 'GET', $oauth);
 		$composite_key = rawurlencode($this->consumer_secret) . '&' . rawurlencode($this->oauth_access_token_secret);
 		$oauth_signature = base64_encode(hash_hmac('sha1', $base_info, $composite_key, true));
 		$oauth['oauth_signature'] = $oauth_signature;
@@ -112,7 +112,7 @@ class jrTwitterFeed {
 			$time = (int)get_option('jr-twitter-feed_time'); // get last update
 		}
 		if (time() - $time > ($args['interval']*3600)){
-			$tweets_json = retrieve_fresh_tweets($args['user'], $args['num']); // get tweets and decode them into a variable
+			$tweets_json = $this->retrieve_fresh_tweets($args['user'], $args['num']); // get tweets and decode them into a variable
 			$tweets = json_decode($tweets_json);	
 			if ($args['file_storage']){
 				file_put_contents('jr-twitter-feed_time.txt',time());

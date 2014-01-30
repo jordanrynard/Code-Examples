@@ -1,6 +1,6 @@
 <?
 
-header("Content-Type: text/html; charset=utf-8"); // REquired because of weird Chars in database Overviews
+header("Content-Type: text/html; charset=utf-8"); // Required because of Trakt data
 
 include ('config.php');
 include ('functions.php');

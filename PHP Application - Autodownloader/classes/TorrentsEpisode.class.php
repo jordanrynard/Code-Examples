@@ -219,21 +219,7 @@ class TorrentsEpisode extends Torrents {
 
 	static function parse_torrent_name_season_episode($string, $episode){ // We pass it the episode in case it's a double episode
 		Debug::msg("Parsing Torrent Name: ".$string." [no_live_debug]");
-		// Matches Basic Show/Season/Episode Pattern (Falling Skies s01e01, Falling Skies Season 1 Episode 01, Falling Skies S1Ep2)
-		// Matches double episode Pattern (s01e01-02, S01e01+02, S01E01E02, The Office S09E24-25, The Office S09E22E23)
-		// [] means match any of these chars; () means match exact contents; one of these followed by ? means that they're optional
-		// Question mark following a dynamic sekector (.*, .+) is lazy, so it will stop as soon as it can... Otherwise a part of an expression is greedy, and keeps on going as far as it can!! (resulting in something like: 24.Sea)
-		
-		// Removed 'US' from the torrent title (because if I'm not searching with a country extension in the name, it's probably a US show, otherwise I'd specify UK, or CA)
-		// Note that I used \. on each side of US cause I don't want it matching words that contain 'us', and all special chars have been replaced with a period.
-		// I changed it to match anything not a letter or number, so could be a - or something
-		// Had to make opening match not greedy -- can this have a negative result? there's nothing wildcard in between it and the season match... so that's good
 
-		// Accomodate for 'PROPER' between show name and episode? 
-		// Accomodate for multiple occurances in the same title like: Season 1 Episode 01 s01e01
-		// Accomodate for Initials? (America's Next Top Model - ANTM)
-
-		// $pattern = '/^(.+)(?:S|Season)[^0-9]?([0-9]+)[^0-9]?(?:E|Ep|Episode)[^0-9]?([0-9]+)(?:[-\+E]([0-9]+))?.*$/i'; // (?:foo) means that it won't capture! (http://php.net/manual/en/regexp.reference.subpatterns.php)
 		$pattern = '/^(.+?)(?:[^a-zA-Z0-9]US[^a-zA-Z0-9])?(?:S|Season)[^0-9]?([0-9]+)[^0-9]?(?:E|Ep|Episode)[^0-9]?([0-9]+)(?:[-\+E]([0-9]+))?.*$/i'; // (?:foo) means that it won't capture! (http://php.net/manual/en/regexp.reference.subpatterns.php)
 		if (preg_match($pattern, $string, $matches)){
 			if (!empty($matches[4]) && intval($matches[4]) == $episode){ // In case it's a double episode, we get two Episode Matches

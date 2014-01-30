@@ -15,3 +15,7 @@ Code-Examples
 **Wordpress Plugin: Twitter Feed**
 
 **Wordpress Theme: Blank Canvas**
+
+**Wordpress Theme: Muskoka Beer Festival**  
+  * Requires a few dependencies, so will break if try to use on own
+  * Has a Survey system, and a Ticket Purchase display system in the functions.php 

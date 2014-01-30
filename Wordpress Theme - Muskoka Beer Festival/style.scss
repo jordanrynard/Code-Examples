@@ -1,0 +1,36 @@
+/*!
+Theme Name: Muskoka Beer Festival
+Author: Jordan Rynard
+Author URI: http://jordanrynard.com
+Description: A custom built theme for the Muskoka Beer Festival
+Version: 2.0
+*/
+
+/*!
+Fonts: 
+
+
+*/
+
+@import "partials/_normalize";
+@import "partials/_base";
+@import "partials/1_global";
+@import "partials/2_header";
+@import "partials/3_nav";
+
+
+//****************************************************************
+//      Footer
+//****************************************************************
+@import "partials/4_pagination";
+@import "partials/5_footer";
+
+//****************************************************************
+//      Media Queries
+//****************************************************************
+@import "partials/6_media";
+
+//****************************************************************
+//      Pages
+//****************************************************************
+@import "partials/_pages";

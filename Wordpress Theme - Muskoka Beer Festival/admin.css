@@ -1,0 +1,96 @@
+/*========================================================= FILE GALLERY ===========================================================*/
+/* File-Gallery buttons */
+#fg_buttons input#file_gallery_open_help,
+#fg_buttons input#file_gallery_adjust_media_settings,
+/*#fg_buttons input#file_gallery_clear_cache_manual,*/
+#fg_buttons input#file_gallery_copy_all,
+#fg_buttons input#file_gallery_detach_checked,
+#fg_buttons input#file_gallery_refresh,
+#fg_buttons input#file_gallery_check_all,
+#fg_buttons input#file_gallery_uncheck_all {
+	display:none;
+}
+#fg_buttons input#file_gallery_upload_media {
+	display:block;
+}
+
+/* File-Gallery extended options */
+fieldset#file_gallery_gallery_options,
+fieldset#file_gallery_single_options,
+fieldset#file_gallery_tag_attachment_switcher {
+	display:none!important;
+}
+
+/* Custom Fields when 'editing' Image */
+fieldset#fieldset_attachment_custom_fields {
+	display:none!important;
+}
+
+/* Crop button */
+#file_gallery_list a.crop {
+	display: block;
+	height: 16px;
+	position: absolute;
+	left: -1px;
+	bottom: -1px;
+	width: 16px;
+	z-index: 100;
+}
+#file_gallery_list .crop img {
+	bottom: 15%;
+	left: 15%;
+}
+
+/* Bug in ACF */
+body #wpwrap form #poststuff .acf_postbox.hide-if-js {
+	display:none!important;
+}
+
+/*====================== Post Thumbnail Editor ======================*/
+a#pte-log-button.show-log-messages {
+	display:none!important;
+	visibility:hidden!important;
+}
+#stage2 a.stage-navigation {
+	display:none;
+}
+#stage1.stage h1.stage-header,
+#stage2.stage h1.stage-header {
+	visibility:hidden;
+}
+#pte-log-button {
+	display:none!important;
+}
+
+#pte-sizes-container {
+	float:right!important;
+}
+#stage1 {
+	/* width:748px!important; */
+}
+
+
+/*===================== ACG Add Image Button =========================*/
+#media-items .media-item .acf-message-wrapper {
+	position:absolute!important;
+	top:0px!important;
+	width:100%;
+}
+
+/*=======================================================================*/
+.plugin-update-tr .update-message {
+	background-color:rgba(255,0,0,.5)!important;
+}
+
+
+/*======================= Hide Filters ==============================*/
+.tablenav.top .alignleft.actions select[name=m],
+.tablenav.top .alignleft.actions select[name=seo_filter],
+.tablenav.top .alignleft.actions input[type=submit] {
+	display:none;
+}
+
+/* Hide preview */
+#view-post-btn {
+	display:none;
+}

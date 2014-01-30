@@ -1,0 +1,19 @@
+http://jscrollpane.kelvinluck.com/
+
+
+<script>
+jQuery(document).ready(function($){
+	$('.scroll-pane').jScrollPane({
+		verticalDragMaxHeight: 100,
+		verticalGutter:15
+	});
+});
+</script>
+
+
+.jspVerticalBar {
+	width:8px !important;
+}
+.jspDrag {
+	background:#40586f!important;
+}

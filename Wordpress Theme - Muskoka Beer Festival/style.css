@@ -1,0 +1,1429 @@
+/*
+ * !
+ * Theme Name: Muskoka Beer Festival
+ * Author: Jordan Rynard
+ * Author URI: http://jordanrynard.com
+ * Description: A custom built theme for the Muskoka Beer Festival
+ * Version: 2.0
+ */
+/*
+ * !
+ * Fonts:
+ */
+/*
+ * =================================================== MEYER RESET =============================================
+ */
+/* line 2 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__normalize.scss */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 3 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+/* line 4 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__normalize.scss */
+body {
+  line-height: normal; }
+
+/* line 5 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__normalize.scss */
+ol,
+ul {
+  list-style: none; }
+
+/* line 6 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__normalize.scss */
+blockquote,
+q {
+  quotes: none; }
+
+/* line 7 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__normalize.scss */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: none; }
+
+/* line 8 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 9 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__normalize.scss */
+b,
+strong {
+  font-weight: bold; }
+
+/* line 10 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__normalize.scss */
+em,
+i {
+  font-style: italic; }
+
+/* line 11 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__normalize.scss */
+input,
+textarea {
+  padding: 0px;
+  border: none;
+  outline: none;
+  resize: none;
+  overflow: hidden;
+  resize: none;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*
+ * ===================== WORDPRESS NORMALIZE / BASE =======================
+ */
+/*
+ * Text meant only for screen readers
+ */
+/* line 5 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+.screen-reader-text,
+.assistive-text {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+    /*
+   * IE6, IE7
+   */
+  clip: rect(1px, 1px, 1px, 1px); }
+
+/*
+ * Alignment
+ */
+/* line 12 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+.alignleft {
+  display: inline;
+  float: left; }
+
+/* line 16 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+.alignright {
+  display: inline;
+  float: right; }
+
+/* line 20 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/*
+ * content navigation
+ */
+/* line 28 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+#content nav {
+  display: block;
+  overflow: hidden; }
+
+/* line 32 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+#content nav .nav-previous {
+  float: left;
+  width: 50%; }
+
+/* line 36 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+#content nav .nav-next {
+  float: right;
+  text-align: right;
+  width: 50%; }
+
+/*
+ * 404 page
+ */
+/* line 43 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+.error404 .widget {
+  float: left;
+  width: 33%; }
+
+/* line 48 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+.error404 .widget .widgettitle,
+.error404 .widget ul {
+  margin-right: 1em; }
+
+/* line 51 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+.error404 .widget_tag_cloud {
+  clear: both;
+  float: none;
+  width: 100%; }
+
+/*
+ * Notices
+ */
+/* line 59 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+.post .notice,
+.error404 #searchform {
+  background: #eeeeee;
+  display: block;
+  padding: 1em; }
+
+/*
+ * Image Attachments
+ */
+/* line 66 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+.image-attachment div.entry-meta {
+  float: left; }
+
+/* line 69 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+.image-attachment nav {
+  float: right;
+  margin: 0 0 1em 0; }
+
+/* line 73 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+.image-attachment .entry-content {
+  clear: both; }
+
+/* line 76 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+.image-attachment .entry-content .entry-attachment {
+  background: #eeeeee;
+  margin: 0 0 1em;
+  padding: 1em;
+  text-align: center; }
+
+/* line 82 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+.image-attachment .entry-content .attachment {
+  display: block;
+  margin: 0 auto;
+  text-align: center; }
+
+/*
+ * Aside Posts
+ */
+/* line 89 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+.format-aside .entry-header {
+  display: none; }
+
+/* line 92 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+.single .format-aside .entry-header {
+  display: block; }
+
+/* line 96 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+.format-aside .entry-content,
+.format-aside .entry-summary {
+  padding-top: 1em; }
+
+/* line 100 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+.single .format-aside .entry-content,
+.single .format-aside .entry-summary {
+  padding-top: 0; }
+
+/*
+ * Gallery Posts
+ */
+/* line 105 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+.format-gallery .gallery-thumb {
+  float: left;
+  margin: 0 1em 0 0; }
+
+/*
+ * Image Posts
+ */
+/* line 111 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+.format-image .entry-header {
+  display: none; }
+
+/* line 114 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+.single .format-image .entry-header {
+  display: block; }
+
+/* line 118 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+.format-image .entry-content,
+.format-image .entry-summary {
+  padding-top: 1em; }
+
+/* line 122 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+.single .format-image .entry-content,
+.single .format-image .entry-summary {
+  padding-top: 0; }
+
+/*
+ * =Images
+ * --------------------------------------------------------------
+ */
+/* line 129 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+a img {
+  border: none; }
+
+/* line 132 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+p img {
+  margin-bottom: 0.5em;
+    /*
+   * a small bottom margin prevents content floating under images
+   */ }
+
+/*
+ * 
+ * Resize images to fit the main content area.
+ * - Applies only to images uploaded via WordPress by targeting size-* classes.
+ * - Other images will be left alone. Use "size-auto" class to apply to other images.
+ */
+/* line 146 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+img.size-auto,
+img.size-full,
+img.size-large,
+img.size-medium,
+.attachment img,
+.widget-area img,
+.wp-caption {
+  max-width: 100%;
+    /*
+   * When images are too wide for containing element, force them to fit.
+   */
+  height: auto;
+    /*
+   * Override height to match resized width for correct aspect ratio.
+   */ }
+
+/* line 150 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+img.alignleft {
+  margin-right: 1em; }
+
+/* line 153 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+img.alignright {
+  margin-left: 1em; }
+
+/* line 156 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+.wp-caption {
+  padding: 0.5em;
+  text-align: center; }
+
+/* line 160 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+.wp-caption img {
+  margin: 0.25em; }
+
+/* line 163 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+.wp-caption .wp-caption-text {
+  margin: 0.5em; }
+
+/* line 166 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+
+/* line 168 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+.wp-smiley {
+  margin: 0; }
+
+/*
+ * =Forms
+ * --------------------------------------------------------------
+ */
+/* line 175 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+#searchform label {
+  display: none; }
+
+/* line 178 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+#searchform input#s {
+  width: 60%; }
+
+/* line 182 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+input[type=text],
+input#s {
+  margin: 0 1em 0 0;
+  width: 60%; }
+
+/* line 186 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+textarea {
+  width: 80%; }
+
+/*
+ * Class for labelling required form items
+ */
+/* line 191 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+.required {
+  color: #cc0033; }
+
+/*
+ * =Comments
+ * --------------------------------------------------------------
+ */
+/* line 198 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+article.comment {
+  display: block; }
+
+/* line 201 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+#respond input[type=text] {
+  display: block;
+  width: 60%; }
+
+/* line 205 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+#respond textarea {
+  display: block;
+  margin: 0 0 1em;
+  width: 80%; }
+
+/* line 210 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+#respond .form-allowed-tags {
+  clear: both;
+  width: 80%; }
+
+/* line 214 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+#respond .form-allowed-tags code {
+  display: block; }
+
+/*
+ * =Widgets
+ * --------------------------------------------------------------
+ */
+/* line 221 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+.widget {
+  display: block; }
+
+/* line 224 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+.widget-area .widget_search {
+  overflow: hidden; }
+
+/* line 227 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/__base.scss */
+.widget-area .widget_search input {
+  float: left; }
+
+/* line 2 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_1_global.scss */
+body {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  font-size: 1em;
+  background: url('images/background.jpg') center top; }
+
+/* line 11 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_1_global.scss */
+a {
+  color: black; }
+
+/* line 14 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_1_global.scss */
+a:hover {
+  color: #ff7e00; }
+
+/* line 19 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_1_global.scss */
+  /* line 20 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_1_global.scss */
+  h1 a {
+    text-decoration: none; }
+
+/* line 24 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_1_global.scss */
+  /* line 25 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_1_global.scss */
+  h2 a {
+    text-decoration: none; }
+
+/* line 29 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_1_global.scss */
+  /* line 30 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_1_global.scss */
+  h3 a {
+    text-decoration: none; }
+
+/* line 34 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_1_global.scss */
+  /* line 35 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_1_global.scss */
+  h4 a {
+    text-decoration: none; }
+
+/* line 39 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_1_global.scss */
+  /* line 40 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_1_global.scss */
+  h5 a {
+    text-decoration: none; }
+
+/* line 45 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_1_global.scss */
+
+/* line 49 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_1_global.scss */
+#page {
+  position: relative;
+  margin: 0 auto;
+  width: 1200px;
+    /*
+   * 1130
+   */
+  padding-bottom: 20px; }
+
+/* line 57 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_1_global.scss */
+#main {
+  z-index: 25;
+  clear: both;
+  background: white;
+  margin: -28px 0px 0px 0px;
+  padding: 29px 0px 0px 0px;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.7); }
+  /* line 64 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_1_global.scss */
+  #main #primary {
+    float: right;
+    width: 910px;
+    margin-right: 24px;
+    background: white; }
+    /* line 69 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_1_global.scss */
+  /* line 72 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_1_global.scss */
+  /* line 75 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_1_global.scss */
+  #main nav#access {
+    z-index: 10;
+    position: relative;
+    background: white; }
+
+/* line 82 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_1_global.scss */
+.home #main #primary,
+.about #main #primary {
+  width: 934px;
+  margin-right: 0px; }
+
+/* line 87 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_1_global.scss */
+footer#colophon {
+  z-index: 50;
+  position: relative; }
+
+/* line 1 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_2_header.scss */
+header#branding {
+  position: relative;
+  z-index: 50;
+    /*
+   * logo
+   */ }
+  /* line 6 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_2_header.scss */
+  header#branding h1#logo {
+    z-index: 100;
+    position: relative;
+    margin: 0px 0px 0px 0px;
+    margin-left: -19px; }
+    /* line 11 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_2_header.scss */
+    header#branding h1#logo a {
+      background: url('images/header.png') no-repeat;
+      width: 1219px;
+      height: 602px;
+      display: inline-block;
+      text-indent: 150%;
+      white-space: nowrap;
+      overflow: hidden; }
+  /* line 22 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_2_header.scss */
+  header#branding h2#tagline {
+    z-index: 50;
+    position: relative;
+    background: url('images/tagline.png') no-repeat center center;
+    width: 1614px;
+    height: 134px;
+    margin: -106px 0px 0px -204px;
+    text-indent: 250%;
+    white-space: nowrap;
+    overflow: hidden; }
+
+/* line 1 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_3_nav.scss */
+nav#access {
+  width: 265px;
+  float: left;
+    /*
+   * first level
+   */
+    /*
+   * END first level
+   */ }
+  /* line 5 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_3_nav.scss */
+  nav#access >ul.menu {
+    border-right: 1px solid black;
+    margin: 0px 0px 19px 0px;
+    padding: 0px 18px 0px 0px;
+    text-align: right;
+    overflow: hidden; }
+    /* line 11 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_3_nav.scss */
+    nav#access >ul.menu >li {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      float: right;
+      clear: both;
+      margin: 1px 0px 1px 0px;
+            /*
+       * second level (submenu)
+       */
+            /*
+       * END second level
+       */ }
+      /* line 18 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_3_nav.scss */
+      nav#access >ul.menu >li#menu-item-58 a {
+        text-transform: uppercase !important; }
+      /* line 21 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_3_nav.scss */
+      nav#access >ul.menu >li >a {
+        text-decoration: none;
+        font-size: 25px;
+        line-height: 42px;
+        text-transform: lowercase;
+        display: block;
+        white-space: nowrap;
+        padding: 0px 10px 0px 10px; }
+      /* line 30 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_3_nav.scss */
+        /* line 31 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_3_nav.scss */
+        nav#access >ul.menu >li.current-menu-item > a,
+        nav#access >ul.menu >li.current_page_item > a,
+        nav#access >ul.menu >li:hover > a {
+          color: white;
+          font-size: 36px;
+          background: #ff7e00;
+                    /*
+           * 
+           * font-weight:bold;
+           * text-transform:uppercase;
+           */
+          font-family: 'rabioheadregular'; }
+      /* line 43 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_3_nav.scss */
+      /* line 46 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_3_nav.scss */
+      nav#access >ul.menu >li >ul {
+        position: absolute;
+        display: none;
+        left: 0px;
+        bottom: 0px; }
+        /* line 52 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_3_nav.scss */
+        nav#access >ul.menu >li >ul >li {
+          position: relative;
+                    /*
+           * third level (subsubmenu)
+           */
+                    /*
+           * END third level
+           */ }
+          /* line 54 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_3_nav.scss */
+          nav#access >ul.menu >li >ul >li >a {
+            text-decoration: none; }
+          /* line 57 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_3_nav.scss */
+            /* line 58 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_3_nav.scss */
+          /* line 62 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_3_nav.scss */
+          nav#access >ul.menu >li >ul >li >ul {
+            position: absolute;
+            display: none;
+            top: 0px;
+            left: 100%; }
+            /* line 67 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_3_nav.scss */
+            nav#access >ul.menu >li >ul >li >ul >li {
+              position: relative; }
+              /* line 69 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_3_nav.scss */
+              nav#access >ul.menu >li >ul >li >ul >li >a {
+                text-decoration: none; }
+              /* line 72 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_3_nav.scss */
+                /* line 73 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_3_nav.scss */
+          /* line 79 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_3_nav.scss */
+            /* line 80 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_3_nav.scss */
+            nav#access >ul.menu >li >ul >li:hover >ul {
+              display: block; }
+      /* line 87 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_3_nav.scss */
+        /* line 88 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_3_nav.scss */
+        nav#access >ul.menu >li:hover >ul {
+          display: block; }
+  /* line 95 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_3_nav.scss */
+  nav#access #twitter-feed {
+    margin: 0px 0px 85px 0px;
+    background: white;
+    border: 1px solid black;
+    width: 243px;
+    margin-left: 22px;
+    min-height: 350px; }
+    /* line 102 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_3_nav.scss */
+    nav#access #twitter-feed .top {
+      position: relative; }
+      /* line 104 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_3_nav.scss */
+      nav#access #twitter-feed .top .bird {
+        position: absolute;
+        bottom: -10px;
+        left: -10px; }
+      /* line 109 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_3_nav.scss */
+      nav#access #twitter-feed .top a.link {
+        border-bottom: 1px solid #555555;
+        margin: 0px 0px 0px 38px;
+        padding: 0px 15px 0px 27px;
+        line-height: 47px;
+        display: inline-block;
+        font-size: 25px;
+        text-decoration: none;
+        white-space: nowrap; }
+    /* line 120 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_3_nav.scss */
+    nav#access #twitter-feed ul.tweets {
+      padding: 20px 15px 20px 20px; }
+      /* line 122 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_3_nav.scss */
+      nav#access #twitter-feed ul.tweets li {
+        width: auto;
+        margin: 15px 0px 0px 0px;
+        font-size: 14px; }
+        /* line 126 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_3_nav.scss */
+        nav#access #twitter-feed ul.tweets li .date {
+          display: block;
+          font-style: italic; }
+      /* line 131 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_3_nav.scss */
+      nav#access #twitter-feed ul.tweets li:first-child {
+        margin-top: 0px; }
+
+/* line 1 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_4_pagination.scss */
+.pagination {
+  clear: both; }
+  /* line 4 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_4_pagination.scss */
+  /* line 6 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_4_pagination.scss */
+  /* line 8 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_4_pagination.scss */
+  /* line 10 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_4_pagination.scss */
+
+/* line 1 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_5_footer.scss */
+footer#colophon {
+  position: relative;
+  clear: both;
+  height: 60px;
+  line-height: 60px;
+  background: white; }
+  /* line 7 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_5_footer.scss */
+  footer#colophon .copyright {
+    width: 865px;
+    float: right;
+    border-top: 1px solid black;
+    margin-top: -1px;
+    margin-right: 32px;
+    text-align: center;
+    font-size: 25px;
+    line-height: 64px;
+    height: 60px;
+    font-family: 'rabioheadregular'; }
+  /* line 19 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_5_footer.scss */
+  footer#colophon .links {
+    position: absolute;
+    bottom: 6px;
+    left: 20px;
+    width: 248px; }
+    /* line 24 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_5_footer.scss */
+    footer#colophon .links h4 {
+      background: url('images/heading_follow-us-yo.png') no-repeat center center;
+      width: 214px;
+      height: 36px;
+      margin: 0px 0px 6px 15px;
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden; }
+    /* line 34 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_5_footer.scss */
+    footer#colophon .links a {
+      display: inline-block;
+      vertical-align: bottom;
+      text-indent: 100%;
+      white-space: nowrap;
+      overflow: hidden; }
+    /* line 42 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_5_footer.scss */
+    footer#colophon .links a.facebook {
+      width: 69px;
+      height: 69px;
+      background: url('images/icon-facebook.png') no-repeat center center;
+      margin: 0px 16px 4px 0px; }
+    /* line 48 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_5_footer.scss */
+    footer#colophon .links a.twitter {
+      width: 75px;
+      height: 74px;
+      background: url('images/icon-twitter.png') no-repeat center center;
+      margin: 0px 16px 4px 0px; }
+    /* line 54 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_5_footer.scss */
+    footer#colophon .links a.youtube {
+      width: 70px;
+      height: 69px;
+      background: url('images/icon-youtube.png') no-repeat center center; }
+    /* line 59 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_5_footer.scss */
+    footer#colophon .links a:hover {
+      opacity: 0.8; }
+
+/* line 4 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_6_media.scss */
+@media screen and (max-device-width: 480px) {
+   }
+
+/* line 8 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_6_media.scss */
+@media all and (orientation: portrait) {
+   }
+
+/* line 12 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_6_media.scss */
+@media all and (orientation: landscape) {
+   }
+
+/*
+ * ======================================================PAGE: Home =================================================
+ */
+/* line 2 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+  /* line 3 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+  .pagename-home #primary {
+    z-index: 1;
+    position: relative; }
+  /* line 7 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+  .pagename-home nav#access {
+    z-index: 2;
+    position: relative; }
+  /* line 11 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+  .pagename-home #content {
+    padding: 0px 0px 18px 0px; }
+    /* line 14 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+    .pagename-home #content .slider {
+      position: relative;
+      margin: -2px 0px 0px 80px; }
+      /* line 17 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+      .pagename-home #content .slider ul.slider-ul {
+        z-index: 50;
+        position: relative;
+        width: 758px;
+        height: 521px; }
+        /* line 22 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+        .pagename-home #content .slider ul.slider-ul li {
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          margin-left: -2000px; }
+          /* line 27 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+          .pagename-home #content .slider ul.slider-ul li:first-child {
+            margin-left: 0px; }
+      /* line 32 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+      .pagename-home #content .slider ul.slider-nav {
+        z-index: 150;
+        position: absolute;
+        bottom: -12px;
+        left: 0px;
+        text-align: center;
+        width: 720px; }
+        /* line 39 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+        .pagename-home #content .slider ul.slider-nav li {
+          display: inline-block;
+          width: 16px;
+          height: 17px; }
+          /* line 43 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+          .pagename-home #content .slider ul.slider-nav li a {
+            display: inline-block;
+            width: 16px;
+            height: 17px;
+            background: url('images/slider-nav.png');
+            background-position: -72px 0px;
+            vertical-align: bottom; }
+          /* line 51 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+          .pagename-home #content .slider ul.slider-nav li.active a {
+            background-position: 0px 0px; }
+    /* line 57 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+    .pagename-home #content .ctas {
+      margin: 27px auto 0px auto;
+      background: url('images/cta_bar.jpg') no-repeat 490px bottom;
+      overflow: hidden; }
+      /* line 61 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+      .pagename-home #content .ctas h2 {
+        position: relative;
+        margin: 0 auto;
+        background: url('images/heading_lots-of-fun-stuff-to-do.png') no-repeat center center;
+        width: 671px;
+        height: 93px;
+        margin-bottom: 5px;
+        text-indent: 150%;
+        overflow: hidden;
+        white-space: nowrap; }
+      /* line 73 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+      .pagename-home #content .ctas .left {
+        float: left;
+        margin-left: 18px; }
+      /* line 77 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+      .pagename-home #content .ctas .right {
+        float: right;
+        margin-right: 20px; }
+      /* line 81 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+      .pagename-home #content .ctas a img {
+        vertical-align: bottom; }
+
+/* line 87 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+  /* line 88 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+  .pagename-about p {
+    margin-top: 15px; }
+  /* line 91 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+  .pagename-about p:first-child {
+    margin-top: 0px; }
+  /* line 94 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+  .pagename-about #content {
+    padding: 0px 20px 25px 17px; }
+    /* line 96 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+    .pagename-about #content h1 {
+      position: relative;
+      margin: 20px auto 60px auto;
+      background: url('images/heading_about-the-festival.png') no-repeat left center;
+      width: 549px;
+      height: 72px;
+      text-indent: 150%;
+      white-space: nowrap;
+      overflow: hidden; }
+    /* line 107 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+    .pagename-about #content .main {
+      padding: 0px 15px 22px 23px;
+      font-size: 29px;
+      text-align: center;
+      line-height: 39px; }
+    /* line 114 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+    .pagename-about #content .seperator {
+      position: relative;
+      margin: 26px auto 23px auto;
+      width: 435px;
+      height: 1px;
+      border-top: 1px solid black; }
+    /* line 121 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+    .pagename-about #content .bottom {
+      font-size: 22px;
+      width: 660px;
+      position: relative;
+      margin: 0 auto;
+      line-height: 35px; }
+    /* line 128 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+    .pagename-about #content .sub {
+      overflow: hidden; }
+      /* line 130 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+      .pagename-about #content .sub .left {
+        width: 341px;
+        float: left;
+        margin: 0px 13px 0px 0px; }
+      /* line 135 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+        /* line 136 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+        .pagename-about #content .sub .right a.get-tickets-now {
+          display: inline-block;
+          background: url('images/button_get-tickets-now.png');
+          width: 218px;
+          height: 50px;
+          margin: -17px 120px 11px 0px;
+          float: right;
+          text-indent: 100%;
+          overflow: hidden;
+          white-space: nowrap; }
+        /* line 147 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+        .pagename-about #content .sub .right img.garret {
+          margin: 0px 0px 0px 60px; }
+
+/* line 154 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+  /* line 155 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+  .pagename-breweries .breweries.breweries h1.entry-title {
+    margin-top: 40px;
+    background: url('images/heading_breweries.png') no-repeat left center;
+    width: 362px;
+    height: 64px;
+    position: relative;
+    margin: 15px auto 15px;
+    text-indent: 150%;
+    overflow: hidden;
+    white-space: nowrap; }
+  /* line 167 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+  .pagename-breweries .breweries.wineries h1.entry-title {
+    margin-top: 40px;
+    background: url('images/heading_wine-and-spirits.png') no-repeat left center;
+    width: 470px;
+    height: 73px;
+    position: relative;
+    margin: 0 auto;
+    text-indent: 150%;
+    overflow: hidden;
+    white-space: nowrap; }
+  /* line 179 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+  .pagename-breweries #content {
+    padding-bottom: 50px; }
+    /* line 181 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+    .pagename-breweries #content ul {
+      padding: 40px 0px 50px 0px; }
+      /* line 183 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+      .pagename-breweries #content ul li {
+        font-size: 37px;
+        font-size: 25px;
+        line-height: 40px;
+        text-align: left;
+        width: 630px;
+        margin: 0 auto; }
+        /* line 190 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+        .pagename-breweries #content ul li .number {
+          text-align: right;
+          display: inline-block;
+          width: 40px;
+          padding-right: 8px; }
+        /* line 196 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+          /* line 197 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+          .pagename-breweries #content ul li.empty .seperator {
+            border-bottom: 1px solid black;
+            width: 460px;
+            height: 1px;
+            margin-bottom: 20px;
+            margin-top: 30px;
+            display: inline-block; }
+      /* line 207 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+      .pagename-breweries #content ul li.sub-vendor {
+        padding-left: 67px; }
+    /* line 211 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+    .pagename-breweries #content .more {
+      text-align: center;
+      font-weight: bold;
+      font-size: 25px; }
+
+/* line 219 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+  /* line 220 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+    /* line 221 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+    .pagename-contact #content h1 {
+      position: relative;
+      margin: 15px auto 0px;
+      background: url('images/heading_contact.png') no-repeat left center;
+      width: 326px;
+      height: 73px;
+      text-indent: 150%;
+      overflow: hidden;
+      white-space: nowrap; }
+    /* line 232 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+    .pagename-contact #content .entry-content {
+      text-align: center; }
+      /* line 234 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+      .pagename-contact #content .entry-content .name {
+        margin: 120px 0px 0px 0px;
+        font-size: 41px;
+        line-height: 70px;
+        font-weight: bold; }
+      /* line 240 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+      .pagename-contact #content .entry-content .email {
+        font-size: 41px;
+        line-height: normal; }
+      /* line 244 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+      .pagename-contact #content .entry-content .phone {
+        font-size: 41px;
+        line-height: normal; }
+      /* line 248 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+      .pagename-contact #content .entry-content .seperator {
+        position: relative;
+        width: 456px;
+        height: 1px;
+        margin: 22px auto 30px auto;
+        border-top: 1px solid black; }
+      /* line 255 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+      .pagename-contact #content .entry-content .address {
+        font-size: 41px;
+        line-height: normal; }
+
+/* line 262 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+  /* line 263 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+  .pagename-entertainment h1.entry-title {
+    position: relative;
+    margin: 20px auto 20px auto;
+    background: url('images/heading_entertainment.png') no-repeat left center;
+    width: 500px;
+    height: 76px;
+    text-indent: 150%;
+    overflow: hidden;
+    white-space: nowrap; }
+  /* line 274 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+  .pagename-entertainment #content {
+    padding-bottom: 50px; }
+    /* line 276 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+    .pagename-entertainment #content ul {
+      padding: 40px 0px 150px 0px; }
+      /* line 278 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+      .pagename-entertainment #content ul li {
+        font-size: 37px;
+        text-align: center; }
+        /* line 281 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+          /* line 282 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+          .pagename-entertainment #content ul li.empty .seperator {
+            border-bottom: 1px solid black;
+            width: 460px;
+            height: 1px;
+            margin-bottom: 20px;
+            margin-top: 30px;
+            display: inline-block; }
+    /* line 294 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+    .pagename-entertainment #content li.entertainer {
+      overflow: hidden;
+      text-align: left; }
+      /* line 297 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+      .pagename-entertainment #content li.entertainer .left {
+        width: 331px;
+        float: left;
+        overflow: hidden;
+        margin-left: 32px;
+        padding-left: 10px;
+        text-align: center; }
+      /* line 305 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+      .pagename-entertainment #content li.entertainer .right {
+        float: left;
+        margin-left: 27px;
+        overflow: hidden;
+        width: 508px;
+        font-size: 25px; }
+        /* line 311 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+        .pagename-entertainment #content li.entertainer .right h2 {
+          font-family: 'HeroicCondensedLtdBold';
+          font-size: 45px;
+          line-height: normal;
+          height: auto;
+          color: #ff7e00;
+          margin-top: -10px;
+          padding-bottom: 10px; }
+        /* line 320 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+        .pagename-entertainment #content li.entertainer .right b,
+        .pagename-entertainment #content li.entertainer .right strong {
+          font-size: 25px;
+          font-weight: bold; }
+        /* line 324 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+        .pagename-entertainment #content li.entertainer .right i,
+        .pagename-entertainment #content li.entertainer .right em {
+          font-size: 20px;
+          font-weight: normal; }
+        /* line 328 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+        .pagename-entertainment #content li.entertainer .right a {
+          font-size: 21px; }
+        /* line 331 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+        .pagename-entertainment #content li.entertainer .right p {
+          margin-bottom: 25px; }
+      /* line 335 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+      .pagename-entertainment #content li.entertainer hr {
+        clear: both;
+        float: left;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        width: 90%;
+        position: relative;
+        margin-left: 5%; }
+      /* line 344 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+      .pagename-entertainment #content li.entertainer:last-child hr {
+        display: none; }
+
+/* line 350 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+  /* line 351 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+  .pagename-food h1.entry-title {
+    position: relative;
+    margin: 40px auto 140px auto;
+    background: url('images/heading_food.png') no-repeat left center;
+    width: 340px;
+    height: 91px;
+    text-indent: 150%;
+    overflow: hidden;
+    white-space: nowrap; }
+  /* line 362 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+  .pagename-food img.savour-muskoka {
+    margin-top: 50px; }
+  /* line 365 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+  .pagename-food #content {
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 25px; }
+    /* line 369 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+    .pagename-food #content ul {
+      padding: 40px 0px 150px 0px; }
+      /* line 371 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+      .pagename-food #content ul li {
+        font-size: 37px;
+        text-align: center; }
+        /* line 374 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+          /* line 375 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+          .pagename-food #content ul li.empty .seperator {
+            border-bottom: 1px solid black;
+            width: 460px;
+            height: 1px;
+            margin-bottom: 20px;
+            margin-top: 30px;
+            display: inline-block; }
+
+/* line 388 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+  /* line 389 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+  .pagename-photo-gallery h1.entry-title {
+    margin-top: 30px;
+    background: url('images/heading_photo-gallery.png') no-repeat left center;
+    position: relative;
+    margin: 15px auto 0px;
+    width: 440px;
+    height: 73px;
+    text-indent: 150%;
+    overflow: hidden;
+    white-space: nowrap; }
+  /* line 401 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+  .pagename-photo-gallery #content {
+    padding: 0px 0px 50px 0px; }
+    /* line 403 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+    .pagename-photo-gallery #content ul.gallery {
+      overflow: hidden;
+      width: 765px;
+      margin: 65px 0px 0px 78px; }
+      /* line 407 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+      .pagename-photo-gallery #content ul.gallery li {
+        float: left;
+        margin-left: 28px;
+        margin-bottom: 28px; }
+        /* line 411 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+        .pagename-photo-gallery #content ul.gallery li.first {
+          margin-left: 0px; }
+        /* line 414 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+        .pagename-photo-gallery #content ul.gallery li a {
+          display: inline-block; }
+          /* line 416 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+          .pagename-photo-gallery #content ul.gallery li a img {
+            vertical-align: bottom; }
+  /* line 423 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+  .pagename-photo-gallery ul.all-galleries {
+    text-align: center;
+    padding: 30px 0px 0px 0px; }
+    /* line 426 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+    .pagename-photo-gallery ul.all-galleries li {
+      display: inline-block;
+      font-weight: bold; }
+      /* line 428 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+      .pagename-photo-gallery ul.all-galleries li a {
+        display: inline-block;
+        font-size: 35px;
+        padding: 10px 20px;
+        margin: 15px 5px;
+        color: #ff7e00;
+        text-decoration: none; }
+        /* line 435 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+      /* line 439 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+      .pagename-photo-gallery ul.all-galleries li.active a {
+        border: 2px solid #499700; }
+
+/* line 446 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+  /* line 447 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+  .pagename-location #content {
+    text-align: center; }
+    /* line 449 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+    .pagename-location #content h1 {
+            /*
+       * font-family: 'HeroicCondensedLtdBold';
+       */
+      position: relative;
+      margin: 5px auto 50px auto;
+      background: url('images/heading_location.png') no-repeat center center;
+      width: 412px;
+      height: 74px;
+      text-indent: 150%;
+      overflow: hidden;
+      white-space: nowrap; }
+    /* line 461 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+    .pagename-location #content .address {
+      font-size: 34px;
+      margin-bottom: 20px; }
+    /* line 465 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+    .pagename-location #content .near {
+      padding: 5px 0px 0px 0px;
+      font-size: 20px; }
+    /* line 469 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+    .pagename-location #content .link {
+      padding: 10px 0px 35px 0px; }
+      /* line 471 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+      .pagename-location #content .link a {
+        font-size: 29px; }
+    /* line 475 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+    .pagename-location #content .map {
+      display: inline-block;
+      width: 690px;
+      background: black;
+      padding: 15px 20px 15px 20px; }
+    /* line 481 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+    .pagename-location #content .details {
+      font-size: 26px;
+      width: 700px;
+      text-align: center;
+      position: relative;
+      margin: 30px auto 0px; }
+    /* line 488 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+    .pagename-location #content .seperator {
+      position: relative;
+      margin: 25px auto 24px auto;
+      width: 435px;
+      height: 1px;
+      border-top: 1px solid black; }
+    /* line 495 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+    .pagename-location #content .keep-in-mind {
+      font-size: 25px;
+      width: 700px;
+      text-align: center;
+      position: relative;
+      margin: 0 auto; }
+
+/* line 505 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+  /* line 506 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+  .pagename-sponsors h1.entry-title {
+    margin-top: 60px;
+    position: relative;
+    margin: 10px auto 50px auto;
+    background: url('images/heading_sponsors.png') no-repeat left center;
+    width: 356px;
+    height: 81px;
+    text-indent: 150%;
+    overflow: hidden;
+    white-space: nowrap; }
+  /* line 518 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+    /* line 519 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+    .pagename-sponsors #content img.temp {
+      margin: 60px 0px 0px 135px; }
+
+/* line 524 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+  /* line 525 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+  .pagename-tickets h1.entry-title {
+    margin-top: 40px;
+    background: url('images/heading_tickets.png') no-repeat left center;
+    position: relative;
+    margin: 20px auto 70px auto;
+    width: 442px;
+    height: 85px;
+    text-indent: 150%;
+    overflow: hidden;
+    white-space: nowrap; }
+  /* line 537 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+  .pagename-tickets #content {
+    position: relative;
+    min-height: 825px; }
+    /* line 540 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+    .pagename-tickets #content .left {
+      float: left;
+      width: 400px;
+      border-right: 1px solid black; }
+    /* line 545 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+    .pagename-tickets #content .right {
+      float: right;
+      width: 450px;
+      margin-right: 45px;
+      padding: 20px 0px 0px 0px; }
+      /* line 550 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+      .pagename-tickets #content .right .text {
+        font-size: 25px;
+        padding: 20px; }
+    /* line 555 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+    .pagename-tickets #content .success {
+      font-size: 30px;
+      text-align: center;
+      padding: 0px 0px 40px 0px; }
+    /* line 560 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+    .pagename-tickets #content form {
+      padding: 15px 0px 0px 0px;
+      text-align: center; }
+      /* line 563 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+      .pagename-tickets #content form h2 {
+        font-size: 30px;
+        display: none; }
+      /* line 567 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+      .pagename-tickets #content form select {
+        margin: 0px 0px 15px 0px; }
+      /* line 570 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+      .pagename-tickets #content form input[name=quantity] {
+        width: 35px;
+        padding: 3px 8px;
+        margin: 0px 0px 15px 0px;
+        border: 1px solid #abadb3; }
+      /* line 576 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+      .pagename-tickets #content form input[name=heard_from_other] {
+        border: 1px solid #abadb3; }
+      /* line 579 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+      .pagename-tickets #content form input[name=submit] {
+        margin: 0px 0px 20px 0px; }
+    /* line 583 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+    .pagename-tickets #content .ticket-details {
+      text-align: right;
+      margin: 0px 0px 0px 0px;
+      padding: 15px 0px 140px 0px;
+      width: 375px;
+      font-size: 33px; }
+      /* line 589 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+      .pagename-tickets #content .ticket-details .additional {
+        font-size: 25px;
+        padding-top: 15px; }
+    /* line 594 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+    .pagename-tickets #content .note {
+      margin: 42px 0px 0px 64px;
+      font-size: 29px; }
+    /* line 598 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+    .pagename-tickets #content img.excited-guy {
+      position: absolute;
+      bottom: 1px;
+      right: -35px; }
+  /* line 604 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+  .pagename-tickets .bottom {
+    clear: both;
+    padding-top: 40px;
+    padding-bottom: 30px; }
+    /* line 608 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+    .pagename-tickets .bottom .details {
+      font-size: 26px;
+      width: 700px;
+      text-align: center;
+      position: relative;
+      margin: 30px auto 0px;
+      color: #ff7e00; }
+    /* line 616 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+    .pagename-tickets .bottom .seperator {
+      position: relative;
+      margin: 25px auto 24px auto;
+      width: 535px;
+      height: 1px;
+      border-top: 1px solid black; }
+    /* line 623 /home/thegriff/public_html/_muskokabeerfestival.ca/wp-content/themes/cws/partials/_pages.scss */
+    .pagename-tickets .bottom .keep-in-mind {
+      font-size: 25px;
+      width: 700px;
+      text-align: center;
+      position: relative;
+      margin: 0 auto; }
+

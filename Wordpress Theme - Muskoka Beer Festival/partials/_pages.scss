@@ -1,0 +1,650 @@
+/*======================================================PAGE: Home =================================================*/
+.pagename-home {
+	#primary {
+		z-index:1;
+		position:relative;
+	}
+	nav#access {
+		z-index:2;
+		position:relative;
+	}
+	#content {
+		padding:0px 0px 18px 0px;
+		
+		.slider {
+			position:relative;
+			margin:-2px 0px 0px 80px;
+			ul.slider-ul {
+				z-index:50;
+				position:relative;
+				width:758px;
+				height:521px;
+				li {
+					position:absolute;
+					top:0px;
+					left:0px;
+					margin-left:-2000px;
+					&:first-child{
+						margin-left:0px;
+					}
+				}
+			}
+			ul.slider-nav {
+				z-index:150;
+				position:absolute;
+				bottom:-12px;
+				left:0px;
+				text-align:center;
+				width:720px;
+				li {
+					display:inline-block;
+					width:16px;
+					height:17px;
+					a {
+						display:inline-block;
+						width:16px;
+						height:17px;
+						background:url('images/slider-nav.png');
+						background-position:-72px 0px;
+						vertical-align:bottom;
+					}
+					&.active a {
+						background-position:0px 0px;
+					}
+				}
+			}
+		}
+		.ctas {
+			margin:27px auto 0px auto;
+			background:url('images/cta_bar.jpg') no-repeat 490px bottom;
+			overflow:hidden;
+			h2 {
+				position:relative;
+				margin:0 auto;
+				background:url('images/heading_lots-of-fun-stuff-to-do.png') no-repeat center center;
+				width:671px;
+				height:93px;
+				margin-bottom:5px;
+
+				text-indent:150%;
+				overflow:hidden;
+				white-space:nowrap;
+			}
+			.left {
+				float:left;
+				margin-left:18px;
+			}
+			.right {
+				float:right;
+				margin-right:20px;
+			}
+			a img {
+				vertical-align:bottom;
+			}
+		}
+	}
+}
+
+/*======================================================PAGE: About =================================================*/
+
+.pagename-about {
+	p {
+		margin-top:15px;
+	}
+	p:first-child {
+		margin-top:0px;
+	}
+	#content {
+		padding:0px 20px 25px 17px;
+		h1 {
+			position:relative;
+			margin:20px auto 60px auto;
+			background:url('images/heading_about-the-festival.png') no-repeat left center;
+			width:549px;
+			height:72px;
+
+			text-indent:150%;
+			white-space:nowrap;
+			overflow:hidden;
+		}
+		.main {
+			padding:0px 15px 22px 23px;
+			font-size:29px;
+
+			text-align:center;
+			line-height:39px;
+		}
+		.seperator {
+			position:relative;
+			margin:26px auto 23px auto;
+			width:435px;
+			height:1px;
+			border-top:1px solid #000;
+		}
+		.bottom {
+			font-size:22px;
+			width:660px;
+			position:relative;
+			margin:0 auto;
+			line-height:35px;
+		}
+		.sub {
+			overflow:hidden;
+			.left {
+				width:341px;
+				float:left;
+				margin:0px 13px 0px 0px;
+			}
+			.right{
+				a.get-tickets-now {
+					display:inline-block;
+					background:url('images/button_get-tickets-now.png');
+					width:218px;
+					height:50px;
+					margin:-17px 120px 11px 0px;
+					float:right;;
+					text-indent:100%;
+					overflow:hidden;
+					white-space:nowrap;
+				}
+				img.garret {
+					margin:0px 0px 0px 60px;
+				}
+			}
+		}
+	}
+}
+
+/*======================================================PAGE: Breweries =================================================*/
+.pagename-breweries {
+	.breweries.breweries h1.entry-title {
+		margin-top:40px;
+		background:url('images/heading_breweries.png') no-repeat left center;
+		width:362px;
+		height:64px;
+		position:relative;
+		margin:15px auto 15px;
+
+		text-indent:150%;
+		overflow:hidden;
+		white-space:nowrap;
+	}
+	.breweries.wineries h1.entry-title {
+		margin-top:40px;
+		background:url('images/heading_wine-and-spirits.png') no-repeat left center;
+		width:470px;
+		height:73px;
+		position:relative;
+		margin:0 auto;
+
+		text-indent:150%;
+		overflow:hidden;
+		white-space:nowrap;
+	}
+	#content {
+		padding-bottom:50px;
+		ul {
+			padding:40px 0px 50px 0px;
+			li {
+				font-size:37.5px;
+				font-size:25px;
+				line-height:40px;
+				text-align:left;
+				width:630px;
+				margin:0 auto;
+				.number {
+					text-align:right;
+					display:inline-block;
+					width:40px;
+					padding-right:8px;
+				}
+				&.empty {
+					.seperator {
+						border-bottom:1px solid #000;
+						width:460px;
+						height:1px;
+						margin-bottom:20px;
+						margin-top:30px;
+						display:inline-block;
+					}
+				}
+			}
+			li.sub-vendor {
+				padding-left:67px;
+			}
+		}
+		.more {
+			text-align:center;
+			font-weight:bold;
+			font-size:25px;
+		}
+	}
+}
+
+/*======================================================PAGE: Contact =================================================*/
+.pagename-contact {
+	#content {
+		h1 {
+			position:relative;
+			margin:15px auto 0px;
+			background:url('images/heading_contact.png') no-repeat left center;
+			width:326px;
+			height:73px;
+
+			text-indent:150%;
+			overflow:hidden;
+			white-space:nowrap;
+		}
+		.entry-content {
+			text-align:center;
+			.name {
+				margin:120px 0px 0px 0px;
+				font-size:41px;
+				line-height:70px;
+				font-weight:bold;
+			}
+			.email {
+				font-size:41px;
+				line-height:normal;
+			}
+			.phone {
+				font-size:41px;
+				line-height:normal;
+			}
+			.seperator {
+				position:relative;
+				width:456px;
+				height:1px;
+				margin:22px auto 30px auto;
+				border-top:1px solid #000;
+			}
+			.address {
+				font-size:41px;
+				line-height:normal;
+			}
+		}
+	}
+}
+
+/*======================================================PAGE: Entertainment =================================================*/
+.pagename-entertainment {
+	h1.entry-title {
+		position:relative;
+		margin:20px auto 20px auto;
+		background:url('images/heading_entertainment.png') no-repeat left center;
+		width:500px;
+		height:76px;
+
+		text-indent:150%;
+		overflow:hidden;
+		white-space:nowrap;	
+	}
+	#content {
+		padding-bottom:50px;
+		ul {
+			padding:40px 0px 150px 0px;
+			li {
+				font-size:37.5px;
+				text-align:center;
+				&.empty {
+					.seperator {
+						border-bottom:1px solid #000;
+						width:460px;
+						height:1px;
+						margin-bottom:20px;
+						margin-top:30px;
+						display:inline-block;
+					}
+				}
+			}
+		}
+		
+		li.entertainer {
+			overflow:hidden;
+			text-align:left;
+			.left {
+				width:331px;
+				float:left;
+				overflow:hidden;
+				margin-left:32px;
+				padding-left:10px;
+				text-align:center;
+			}
+			.right {
+				float:left;
+				margin-left:27px;
+				overflow:hidden;
+				width:508px;
+				font-size:25px;
+				h2 {
+	    			font-family: 'HeroicCondensedLtdBold';
+					font-size:45px;
+					line-height:normal;
+					height:auto;
+					color:#ff7e00;
+					margin-top:-10px;
+					padding-bottom:10px;
+				}
+				b, strong {
+					font-size:25px;
+					font-weight:bold;
+				}
+				i, em {
+					font-size:20px;
+					font-weight:normal;
+				}
+				a {
+					font-size:21px;
+				}
+				p {
+					margin-bottom:25px;
+				}
+			}
+			hr {
+				clear:both;
+				float:left;
+				margin-top:40px;
+				margin-bottom:40px;
+				width:90%;
+				position:relative;
+				margin-left:5%;
+			}
+			&:last-child hr {
+				display:none;
+			}
+		}
+	}
+}
+
+/*======================================================PAGE: Food =================================================*/
+.pagename-food {
+	h1.entry-title {
+		position:relative;
+		margin:40px auto 140px auto;
+		background:url('images/heading_food.png') no-repeat left center;
+		width:340px;
+		height:91px;
+		
+		text-indent:150%;
+		overflow:hidden;
+		white-space:nowrap;
+	}
+	img.savour-muskoka {
+		margin-top:50px;
+	}
+	#content {
+		padding-bottom:50px;
+		text-align:center;
+		font-size:25px;
+		ul {
+			padding:40px 0px 150px 0px;
+			li {
+				font-size:37.5px;
+				text-align:center;
+				&.empty {
+					.seperator {
+						border-bottom:1px solid #000;
+						width:460px;
+						height:1px;
+						margin-bottom:20px;
+						margin-top:30px;
+						display:inline-block;
+					}
+				}
+			}
+		}
+	}
+}
+
+/*======================================================PAGE: Photo Gallery =================================================*/
+.pagename-photo-gallery {
+	h1.entry-title {
+		margin-top:30px;
+		background:url('images/heading_photo-gallery.png') no-repeat left center;
+		position:relative;
+		margin:15px auto 0px;
+		width: 440px;
+		height: 73px;
+		
+		text-indent:150%;
+		overflow:hidden;
+		white-space:nowrap;
+	}
+	#content {
+		padding:0px 0px 50px 0px;
+		ul.gallery {
+			overflow:hidden;
+			width:765px;
+			margin:65px 0px 0px 78px;
+			li {
+				float:left;
+				margin-left:28px;
+				margin-bottom:28px;
+				&.first {
+					margin-left:0px;
+				}
+				a {
+					display:inline-block;
+					img {
+						vertical-align:bottom;
+					}
+				}
+			}
+		}
+	}
+	ul.all-galleries {
+		text-align:center;
+		padding:30px 0px 0px 0px;
+		li {
+			display:inline-block;
+			a {
+				display:inline-block;
+				font-size:35px;
+				padding:10px 20px;
+				margin:15px 5px;
+				color:#ff7e00;
+				text-decoration:none;
+				&:hover {
+				}
+			}
+			font-weight:bold;
+			&.active a {
+				border:2px solid #499700;
+
+			}
+		}
+	}
+}
+
+/*======================================================PAGE: Location =================================================*/
+.pagename-location {
+	#content {
+		text-align:center;
+		h1 {
+    		/* font-family: 'HeroicCondensedLtdBold';*/
+    		position:relative;
+    		margin:5px auto 50px auto;
+    		background:url('images/heading_location.png') no-repeat center center;
+    		width:412px;
+    		height:74px;
+
+			text-indent:150%;
+			overflow:hidden;
+			white-space:nowrap;
+		}
+		.address {
+			font-size:34px;
+			margin-bottom:20px;
+		}
+		.near {
+			padding:5px 0px 0px 0px;
+			font-size:20px;
+		}
+		.link {
+			padding:10px 0px 35px 0px;
+			a {
+				font-size:29px;
+			}
+		}
+		.map {
+			display:inline-block;
+			width:690px;
+			background:#000;
+			padding:15px 20px 15px 20px;
+		}
+		.details {
+			font-size:26px;
+			width:700px;
+			text-align:center;
+			position:relative;
+			margin:30px auto 0px;
+		}		
+		.seperator {
+			position:relative;
+			margin:25px auto 24px auto;
+			width:435px;
+			height:1px;
+			border-top:1px solid #000;
+		}
+		.keep-in-mind {
+			font-size:25px;
+			width:700px;
+			text-align:center;
+			position:relative;
+			margin:0 auto;
+		}
+
+	}
+}
+
+/*======================================================PAGE: Sponsors =================================================*/
+.pagename-sponsors {
+	h1.entry-title {
+		margin-top:60px;
+		position:relative;
+		margin:10px auto 50px auto;
+		background:url('images/heading_sponsors.png') no-repeat left center;
+		width:356px;
+		height:81px;
+
+		text-indent:150%;
+		overflow:hidden;
+		white-space:nowrap;
+	}
+	#content {
+		img.temp {
+			margin:60px 0px 0px 135px;
+		}
+	}
+}
+
+/*======================================================PAGE: Tickets =================================================*/
+.pagename-tickets {
+	h1.entry-title {
+		margin-top:40px;
+		background:url('images/heading_tickets.png') no-repeat left center;
+		position:relative;
+		margin:20px auto 70px auto;
+		width:442px;
+		height:85px;
+
+		text-indent:150%;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+	#content {
+		position:relative;
+		min-height:825px;
+		.left {
+			float:left;
+			width:400px;
+			border-right:1px solid #000;
+		}
+		.right {
+			float:right;
+			width:450px;
+			margin-right:45px;
+			padding:20px 0px 0px 0px;
+			.text {
+				font-size:25px;
+				padding:20px;
+			}
+		}
+		.success {
+			font-size:30px;
+			text-align:center;
+			padding:0px 0px 40px 0px;
+		}
+		form {
+			padding:15px 0px 0px 0px;
+			text-align:center;
+			h2 {
+				font-size:30px;
+				display:none;
+			}
+			select {
+				margin:0px 0px 15px 0px;
+			}
+			input[name=quantity]{
+				width:35px;
+				padding:3px 8px;
+				margin:0px 0px 15px 0px;
+				border:1px solid #ABADB3;
+			}
+			input[name=heard_from_other]{
+				border:1px solid #ABADB3;
+			}
+			input[name=submit] {
+				margin:0px 0px 20px 0px;
+			}
+		}
+		.ticket-details {
+			text-align:right;
+			margin:0px 0px 0px 0px;
+			padding:15px 0px 140px 0px;
+			width:375px;
+			font-size:33px;
+			.additional {
+				font-size:25px;
+				padding-top:15px;
+			}
+		}
+		.note {
+			margin:42px 0px 0px 64px;
+			font-size:29px;
+		}
+		img.excited-guy {
+			position:absolute;
+			bottom:1px;
+			right:-35px;
+		}
+	}
+	.bottom {
+		clear:both;
+		padding-top:40px;
+		padding-bottom:30px;
+		.details {
+			font-size:26px;
+			width:700px;
+			text-align:center;
+			position:relative;
+			margin:30px auto 0px;
+			color:#ff7e00;
+		}		
+		.seperator {
+			position:relative;
+			margin:25px auto 24px auto;
+			width:535px;
+			height:1px;
+			border-top:1px solid #000;
+		}
+		.keep-in-mind {
+			font-size:25px;
+			width:700px;
+			text-align:center;
+			position:relative;
+			margin:0 auto;
+		}
+
+	}
+}

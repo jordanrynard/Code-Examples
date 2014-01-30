@@ -1,0 +1,63 @@
+footer#colophon {
+	position:relative;
+	clear:both;
+	height:60px;
+	line-height:60px;
+	background:#fff;
+	.copyright {
+		width:865px;
+		float:right;
+		border-top:1px solid #000;
+		margin-top:-1px;
+		margin-right:32px;
+		text-align:center;
+		font-size:25px;
+		line-height:64px;
+		height:60px;
+	    font-family: 'rabioheadregular';
+	}
+	.links {
+		position:absolute;
+		bottom:6px;
+		left:20px;
+		width:248px;
+		h4 {
+			background:url('images/heading_follow-us-yo.png') no-repeat center center;
+			width:214px;
+			height:36px;
+			margin:0px 0px 6px 15px;
+
+			text-indent:100%;
+			white-space:nowrap;
+			overflow:hidden;
+		}
+		a {
+			display:inline-block;
+			vertical-align:bottom;
+			
+			text-indent:100%;
+			white-space:nowrap;
+			overflow:hidden;
+		}
+		a.facebook {
+			width:69px;
+			height:69px;
+			background:url('images/icon-facebook.png') no-repeat center center;
+			margin:0px 16px 4px 0px;
+		}
+		a.twitter {
+			width: 75px;
+			height: 74px;
+			background:url('images/icon-twitter.png') no-repeat center center;
+			margin:0px 16px 4px 0px;
+		}
+		a.youtube {
+			width: 70px;
+			height: 69px;
+			background:url('images/icon-youtube.png') no-repeat center center;
+		}
+		a:hover {
+			opacity:.8;
+		}
+	}
+}

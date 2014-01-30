@@ -1,0 +1,35 @@
+header#branding {
+	position:relative;
+	z-index:50;
+	
+	/* logo */
+	h1#logo {
+		z-index:100;
+		position:relative;
+		margin:0px 0px 0px 0px;
+		margin-left:-19px;
+		a {
+			background:url('images/header.png') no-repeat;
+			width:1219px;
+			height:602px;
+			display:inline-block;
+
+			text-indent:150%;
+			white-space:nowrap;
+			overflow:hidden;
+		}
+	}
+	h2#tagline {
+		z-index:50;
+		position:relative;
+		background:url('images/tagline.png') no-repeat center center;
+		width:1614px;
+		height:134px;
+		margin:-106px 0px 0px -204px;
+		
+		text-indent:250%;
+		
+		white-space:nowrap;
+		overflow:hidden;
+	}
+}

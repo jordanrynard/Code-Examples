@@ -4,8 +4,8 @@ Code-Examples
 Code Examples from Jordan Rynard
 
 PHP Application: Automatic TV/Movies Downloader and Media Manager.  
-(Main code example, contains many different types:)  
-----------------------------------------------------
+(Main code example, contains many different types:)|
+----------------------------------------------------|
 PHP (Most files, particularly in '/classes/')|
 HTML (in '/view/')|
 Javascript & jQuery (in '/view/')|

@@ -1,12 +1,10 @@
 Code-Examples
 =============
 
-Codes Examples from Jordan Rynard
+Code Examples from Jordan Rynard
 
-PHP Application: Automatic TV/Movies Downloader and Media Manager.
-
-(Main code example, contains many different types:)
-
+PHP Application: Automatic TV/Movies Downloader and Media Manager.  
+(Main code example, contains many different types:)  
 ```
 PHP (Most files, particularly in '/classes/')
 HTML (in '/view/')

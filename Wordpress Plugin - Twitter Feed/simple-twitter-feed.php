@@ -17,7 +17,7 @@ $twitterFeed = new jrTwitterFeed(array(
 	'tag'=>'li', // Default Tag, be sure to wrap with UL manually if using li
 	'file_storage'=>false // Store in file instead of DB
 ));
-$tweets = $twitterFeed->get_tweets();
+echo $twitterFeed->get_tweets();
 
 */
 

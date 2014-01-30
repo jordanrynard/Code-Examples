@@ -3,8 +3,10 @@ Code-Examples
 
 Codes Examples from Jordan Rynard
 
-PHP Application: Automatic TV/Movies Downloader and Media Manager.\n
+PHP Application: Automatic TV/Movies Downloader and Media Manager.
+
 (Main code example, contains many different types:)
+
 ```
 PHP (Most files, particularly in '/classes/')
 HTML (in '/view/')
@@ -15,5 +17,7 @@ Regex (in '/classes/TorrentsEpisode.class.php' :237)
 ```
 
 Wordpress Plugin: Live Refresh
+
 Wordpress Plugin: Twitter Feed
+
 Wordpress Theme: Blank Canvas
